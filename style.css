@@ -15,6 +15,43 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+@media screen and (max-width:1000px){
+    #search-input{
+      max-width: 250px;
+    }
+    header h1{
+       font-size: 1.5rem;
+    }
+    
+}
+@media screen and (max-width:810px){
+    #search-input{
+      max-width: 200px;
+    }
+    header h1{
+       font-size: 1.3rem;
+    }
+   
+}
+@media screen and (max-width:610px){
+ header{
+    display: flex;
+    flex-direction: column;
+    
+ }
+ header h1{
+   
+    margin-bottom: 5px;
+ }
+ #search-input{
+    margin-bottom: 5px;
+  }
+  #export-notes{
+    width: 200px;
+    
+  }
 }
 header h1{
     color: #edd269;
@@ -27,7 +64,7 @@ header h1{
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-right: 7rem;
+  
    
 }
 .fa-magnifying-glass{
@@ -58,6 +95,17 @@ header h1{
     background-color: #321d2e;
     color: #edd269;
     cursor: pointer;
+}
+@media screen and (max-width:610px){
+    #add-note-container{
+       
+       max-width:  200px;
+        
+      }
+   button{
+    width: 200px;
+    
+   }
 }
 
 
